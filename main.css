@@ -1,9 +1,8 @@
-
 * {
     font-family: "Poppins", "sans-serif";
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
+    font-weight: bold!important;
+    /* padding: 0!important; */
+    /* margin: 0!important; */
 }
 
 body {
@@ -11,24 +10,32 @@ body {
     color: #fff!important;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     row-gap: 1em;
-    padding: 0em;
+    padding: 2em 0em!important;
     margin: 0em;
     width: 100vw;
     height: 100vh;
 }
 
-i, a, p, h1, h2, h3, h4, h5, h6{
+i,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0em!important;
 }
 
-#score{
+#score {
     font-size: 2em;
 }
 
-.dots{
+.dots {
     margin: 0em;
 }
 
@@ -52,30 +59,31 @@ canvas {
     border: 0px;
 }
 
-.list{
+.list {
     width: 8em;
-    margin: 0em;
+    margin: 0.4em;
     display: inline-block;
     margin-left: 1em;
 }
 
-
-a , .list>a {
+a,
+.list>a {
     color: #212121;
     text-decoration: none!important;
-    margin: 0.3em ;
+    margin: 0.3em;
 }
 
-.icon{
-    margin-right: 0.5em;
+.icon {
+    margin-right: 0.5em!important;
 }
 
 row {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5em;
     column-gap: 1em;
+    width: 240px;
 }
 
 column {
@@ -102,8 +110,11 @@ column {
 }
 
 .center {
-    width: 100%;
+    width: 80%;
     text-align: center;
+    font-size: 0.7em;
+    /* margin-bottom: 1em!important; */
+    padding-bottom: 2em!important;
 }
 
 footer {
@@ -113,4 +124,33 @@ footer {
     align-items: center;
     padding: 0.5em 1em;
     row-gap: 1em;
+}
+
+.play {
+    font-size: 1.5em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #313131;
+    color: #fff;
+}
+
+.reset {
+    font-size: 1.5em;
+    width: 220px;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: #313131;
+    color: #fff;
+}
+
+.play:active,
+.reset:active {
+    background-color: #000;
 }
